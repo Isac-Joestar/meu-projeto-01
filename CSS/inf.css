@@ -1,0 +1,143 @@
+#informacoes{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#inf_content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position:absolute;
+    right: 40%;
+
+}
+#div_inf_img{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div_inf_img img{
+    height: 100%;
+}
+
+#div_inf_txt{
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    width: 450px;
+    z-index: 2;
+    position: absolute;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: start;
+    
+
+}
+#content_txt{
+    
+    height: auto;
+    width: 75%;
+}
+#div_inf_txt apan, p{
+    width: 100%;
+}
+#div_inf_txt span{
+    font-size: 1.6rem;
+    
+}
+
+#div_inf_txt p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+ 
+}
+
+@media screen and (max-width: 1150px){
+    #div_inf_img{
+        height: 45vh;
+      
+    } 
+    #div_inf_txt p{
+        font-size: 1.2rem;
+     
+    }
+}
+@media screen and (max-width: 1010px){
+    #div_inf_img{
+        height: 40vh;
+      
+    } 
+    #div_inf_txt{
+        height: 200px;
+        width: 400px;
+
+    }
+}
+@media screen and (max-width: 900px){
+    #div_inf_img{
+        height: 35vh;
+      
+    } 
+    #div_inf_txt{
+        height: 200px;
+        width: 400px;
+
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #informacoes{
+        height: auto;
+     
+    }
+    #inf_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:relative;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+    
+    }
+    #div_inf_img{
+        height: 50vh;
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    #div_inf_txt{
+        margin-top: 5vh;
+        height: auto;
+        width: 90%;
+       
+        position: relative;
+        left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    
+    }
+    #div_inf_txt span{
+        font-size: 2rem;
+        
+    }
+    
+    #div_inf_txt p{
+        margin-top: 10px;
+        font-size: 1.4rem;
+     
+    }
+}

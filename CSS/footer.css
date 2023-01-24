@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+}
+footer div{
+    margin: 0 50px;
+}
+#footer_txt span{
+   font-size: 1.3rem;
+}
+#footer_txt ul{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+#footer_txt ul li{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+#footer_txt ul li:hover{
+    border-bottom: 1px solid white;
+}
