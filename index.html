@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -11,6 +13,22 @@
         <header>
             <div id="content_header">
                 <span>loopstudio</span>
+                <ul id="menu_desktop">
+                    <li>About</li>
+                    <li>Corees</li>
+                    <li>Events</li>
+                    <li>Products</li>
+                    <li>Suport</li>
+                </ul>
+                <div class="menu_btn">
+                    <i  id="abrir" class="fa-solid fa-bars menu abrir"></i>
+                    <i id="fechar" class="fa-solid fa-xmark menu fechar"></i>
+                </div>
+            </div>
+           
+        </header>
+        <main>
+            <div id="menu_mobile">
                 <ul>
                     <li>About</li>
                     <li>Corees</li>
@@ -19,18 +37,17 @@
                     <li>Suport</li>
                 </ul>
             </div>
-           
-        </header>
-        <main>
             <div id="background_main">
                 <img id="background_desktop" src="./loopstudios-landing-page-main/images/desktop/image-hero.jpg" alt="">
                 <img id="background_mobile"src="./loopstudios-landing-page-main/images/mobile/image-hero.jpg" alt="">
             </div>
+       
             <div id="main_title">
                 <p>IMMERSIVE</p>
                 <P>EXPERIENCES</P>
                 <P>THAT DELIVER</P>
             </div>
+          
         </main>
     </section>
     <section id="informacoes">
@@ -60,35 +77,43 @@
 
             <div id="projects">
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg" alt="">
+                    <img class="card_desktop" src="./loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg" alt="">
                     <p>DEEP EARTH</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg" alt="">
                     <p>NIGHT ARCADE</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg" alt="">
                     <p>SOCCER TEAM VR</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-grid.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-grid.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-grid.jpg" alt="">
                     <p>NEED FOR SPEED</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-from-above.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-from-above.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-from-above.jpg" alt="">
                     <p>FROM UP ABOVE VR</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg" alt="">
                     <p>POCKET BOREALIS</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-curiosity.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-curiosity.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-curiosity.jpg" alt="">
                     <p>THE CURIOSITY</p>
                 </div>
                 <div class="cards">
-                    <img src="./loopstudios-landing-page-main/images/desktop/image-fisheye.jpg" alt="">
+                    <img class="card_desktop"src="./loopstudios-landing-page-main/images/desktop/image-fisheye.jpg" alt="">
+                    <img class="card_mobile"src="./loopstudios-landing-page-main/images/mobile/image-fisheye.jpg" alt="">
                     <p>MAKE IT FISHEYE</p>
                 </div>
             </div>
@@ -105,12 +130,12 @@
                 <li>Support</li>
             </ul>
         </div>
-        <div id="footer_mg">
+        <div id="footer_icons">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
             </ul>
             <p>@2023 Loopstudios, All rights reserved.</p>
         </div>

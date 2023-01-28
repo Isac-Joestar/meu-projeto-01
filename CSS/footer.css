@@ -27,3 +27,44 @@ footer div{
 #footer_txt ul li:hover{
     border-bottom: 1px solid white;
 }
+
+@media screen and (max-width: 650px) {
+    footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer_txt{
+        text-align: center;
+    }
+    #footer_txt span{
+        margin-top: 10px;
+        font-size: 1.8rem;
+     }
+    #footer_txt ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 0px;
+    
+    }
+    #footer_icons ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    #footer_icons ul li{
+        margin: 0px 10px;
+        font-size: 1.7rem;
+    }
+    #footer_txt ul li{
+        margin-bottom: 7px;
+        font-size: 1.3rem;
+    }
+}

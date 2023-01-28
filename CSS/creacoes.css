@@ -17,6 +17,9 @@
     flex-direction: column;
     padding-bottom: 10vh;
 }
+.card_mobile{
+    display: none;
+}
 #create_top{
     height: 15vh;
     width: 84.5%;
@@ -77,4 +80,48 @@
     color: white;
     font-size: 1.5rem;
     transition: all 0.5s;
+}
+
+@media screen and (max-width: 650px){
+    .card_mobile{
+        display: flex;
+    }
+    .card_desktop{
+        display: none;
+    }
+    #projects{
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+.cards img{
+    /* filter: brightness( 70%); */
+    transition: all 0.5s;
+    width: 100%;
+}
+
+#create_top button{
+    width: 90px;
+    height: 30px;
+    font-size: 1rem;
+}
+}
+@media screen and (max-width: 650px){
+    #create_top{
+        margin-top: 5vh;
+        height: 10vh;
+        width: 84.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #create_top button{
+        margin-top: 10px;
+    }
 }

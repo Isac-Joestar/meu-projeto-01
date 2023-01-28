@@ -23,6 +23,13 @@
     background: none;
     z-index: 999;
 }
+
+#menu_mobile{
+    display: none;
+}
+.menu_btn{
+    display: none;
+}
 #content_header{
     height: 100%;
     width: 90%;
@@ -30,6 +37,7 @@
     align-items: center;
     justify-content: space-between;
     color: aliceblue;
+    position: relative;
     /* background-color: rgba(39, 39, 39, 0.842); */
 }
 #content_header span{
@@ -37,7 +45,7 @@
     font-weight: 600;
     cursor: pointer;
 }
-#content_header ul{
+#menu_desktop{
     display: flex;
     flex-direction: row;
 }
@@ -121,8 +129,9 @@ main{
         margin-left: 0%;
     }
     #background_mobile{
-        display: block;
+        display:flex;
         width: 100%;
+        height: auto;
        
     }
     #home{
@@ -136,4 +145,106 @@ main{
         height: auto;
         width: 90%;
     }
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 4rem;
+        
+    }
+    #menu_desktop{
+        display: none;
+    }
+    .menu_btn{
+        display: flex;
+        z-index: 999;
+        font-size: 1.8rem;
+    }
+    
+    #menu_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        background-color: black;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        z-index: 10;
+        opacity: 0.9;
+
+        transition: all 0.5s;
+    }
+    .change_bg{
+        height: 100% !important;
+       
+    }
+
+    #menu_mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: aliceblue;
+        margin-left: 20px;
+        
+        
+    }
+    #menu_mobile ul li{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: aliceblue;
+
+    }
+    #fechar{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 550px){
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 3.5rem;
+        
+    }
+
+}
+@media screen and (max-width: 490px){
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 3.2rem;
+        
+    }
+
+}
+@media screen and (max-width: 450px){
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+        
+    }
+
+}
+@media screen and (max-width: 360px){
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 2rem;
+        
+    }
+
+}
+@media screen and (max-width: 300px){
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        
+    }
+
+}
+@media screen and (max-width: 250px){
+    #main_title p{
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        
+    }
+
 }
