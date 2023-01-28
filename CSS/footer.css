@@ -24,8 +24,23 @@ footer div{
     cursor: pointer;
 
 }
-#footer_txt ul li:hover{
-    border-bottom: 1px solid white;
+#footer_icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer_icons ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#footer_icons ul li{
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#footer_icons ul  li:hover::after{
+   width: 0%;
 }
 
 @media screen and (max-width: 650px) {

@@ -54,13 +54,30 @@
     font-size: 1.2rem;
     cursor: pointer;
 
-    transition: all 1s;
+  
+    
 }
-#content_header ul li:hover{
-    border-bottom: 1px solid white;
-
+li{
+    position: relative;
+    padding-bottom: 10px;
+}
+li::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
+ li:hover::after{
+    width: 100%;
+    left: 0;
+}
 
 
 
@@ -157,6 +174,7 @@ main{
         display: flex;
         z-index: 999;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     
     #menu_mobile{
@@ -193,7 +211,7 @@ main{
         margin-bottom: 10px;
         text-transform: uppercase;
         color: aliceblue;
-
+        cursor: pointer;
     }
     #fechar{
         display: none;
