@@ -12,16 +12,18 @@ footer div{
 }
 #footer_txt span{
    font-size: 1.3rem;
+   font-family: 'Alata', sans-serif;
 }
 #footer_txt ul{
     display: flex;
     align-items: center;
     margin-top: 10px;
-
+    
 }
 #footer_txt ul li{
     margin-right: 10px;
     cursor: pointer;
+    font-family: 'Alata', sans-serif;
 
 }
 #footer_icons{
