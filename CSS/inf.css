@@ -90,8 +90,6 @@
 
     }
 }
-
-
 @media screen and (max-width: 800px){
     #informacoes{
         height: auto;
@@ -127,6 +125,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        background: none;
         
     
     }
