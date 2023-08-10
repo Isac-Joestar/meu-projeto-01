@@ -1,4 +1,4 @@
-#creacoes{
+#criacoes{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -7,7 +7,7 @@
 
 }
 
-#creacoes_content{
+#criacoes_content{
     width: 90%;
     height: 100%;
     /* background-color: rgb(29, 29, 29); */
@@ -36,7 +36,7 @@
     font-family: 'Alata', sans-serif;
 }
 #create_top button{
-    width: 70px;
+    width: 82px;
     height: 20px;
     text-align: center;
     display: flex;
